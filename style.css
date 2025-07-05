@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.form-container {
+  width: 40%;
+  padding-right: 20px;
+}
+.voucher-container {
+  width: 60%;
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+input, select, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+button {
+  padding: 10px;
+  font-weight: bold;
+}
+textarea {
+  height: 60px;
+}
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  display: block;
+}
