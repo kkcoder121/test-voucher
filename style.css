@@ -2,6 +2,7 @@ body {
   display: flex;
   font-family: Arial, sans-serif;
   padding: 20px;
+  background: #f7f7f7;
 }
 .form-container {
   width: 40%;
@@ -9,9 +10,10 @@ body {
 }
 .voucher-container {
   width: 60%;
-  background: #f9f9f9;
-  padding: 20px;
-  border: 1px solid #ddd;
+  background: white;
+  padding: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 input, select, textarea {
   display: block;
@@ -22,6 +24,7 @@ input, select, textarea {
 button {
   padding: 10px;
   font-weight: bold;
+  margin-top: 10px;
 }
 textarea {
   height: 60px;
@@ -30,4 +33,25 @@ label {
   margin-top: 10px;
   font-weight: bold;
   display: block;
+}
+.header {
+  text-align: center;
+  border-bottom: 2px solid #222;
+  margin-bottom: 20px;
+}
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+.subtitle {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #444;
+}
+.section {
+  margin-bottom: 15px;
+}
+.section h3 {
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #ccc;
 }

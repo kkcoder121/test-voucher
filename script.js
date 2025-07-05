@@ -1,10 +1,14 @@
 function generateVoucher() {
-  document.getElementById('vGuest').innerText = "Guest: " + document.getElementById('guestName').value;
-  document.getElementById('vHotel').innerText = "Hotel: " + document.getElementById('hotelName').value;
-  document.getElementById('vAddress').innerText = "Address: " + document.getElementById('address').value;
-  document.getElementById('vCheck').innerText = "Check-in: " + document.getElementById('checkin').value + " | Check-out: " + document.getElementById('checkout').value;
-  document.getElementById('vBooking').innerText = "Booking ID: " + document.getElementById('bookingId').value + ", Ref: " + document.getElementById('refNo').value;
-  document.getElementById('vRoom').innerText = "Room Type: " + document.getElementById('roomType').value;
-  document.getElementById('vOccupancy').innerText = "Rooms: " + document.getElementById('rooms').value + ", Adults: " + document.getElementById('adults').value + ", Children: " + document.getElementById('children').value;
+  document.getElementById('vGuest').innerText = document.getElementById('guestName').value;
+  document.getElementById('vHotel').innerText = document.getElementById('hotelName').value;
+  document.getElementById('vAddress').innerText = document.getElementById('address').value;
+  document.getElementById('vBookingId').innerText = document.getElementById('bookingId').value;
+  document.getElementById('vRefNo').innerText = document.getElementById('refNo').value;
+  document.getElementById('vCheckin').innerText = document.getElementById('checkin').value;
+  document.getElementById('vCheckout').innerText = document.getElementById('checkout').value;
+  document.getElementById('vRoomType').innerText = document.getElementById('roomType').value;
+  document.getElementById('vRooms').innerText = document.getElementById('rooms').value;
+  document.getElementById('vAdults').innerText = document.getElementById('adults').value;
+  document.getElementById('vChildren').innerText = document.getElementById('children').value;
   html2pdf().from(document.getElementById("voucher")).save("Hotel_Voucher.pdf");
 }
