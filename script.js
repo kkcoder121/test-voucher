@@ -1,19 +1,15 @@
+
 function generateVoucher() {
-  const get = id => document.getElementById(id).value;
-  const set = (id, val) => document.getElementById(id).innerText = val;
-
-  set('vGuest', get('guestName'));
-  set('vBookingId', get('bookingId'));
-  set('vRefNo', get('refNo'));
-  set('vHotel', get('hotelName'));
-  set('vAddress', get('address'));
-  set('vCheckin', get('checkin'));
-  set('vCheckout', get('checkout'));
-  set('vRooms', get('rooms'));
-  set('vAdults', get('adults'));
-  set('vChildren', get('children'));
-  set('vRoomType', get('roomType'));
-  set('vBenefits', get('benefits'));
-
-  html2pdf().from(document.getElementById('voucher')).save('Hotel_Voucher.pdf');
+    document.getElementById("vName").textContent = document.getElementById("guestName").value;
+    document.getElementById("vBookingId").textContent = document.getElementById("bookingId").value;
+    document.getElementById("vReference").textContent = document.getElementById("referenceNo").value;
+    document.getElementById("vHotel").textContent = document.getElementById("hotelName").value;
+    document.getElementById("vAddress").textContent = document.getElementById("address").value;
+    document.getElementById("vCheckIn").textContent = document.getElementById("checkIn").value;
+    document.getElementById("vCheckOut").textContent = document.getElementById("checkOut").value;
+    document.getElementById("vRooms").textContent = document.getElementById("rooms").value;
+    document.getElementById("vAdults").textContent = document.getElementById("adults").value;
+    document.getElementById("vChildren").textContent = document.getElementById("children").value;
+    document.getElementById("vRoomType").textContent = document.getElementById("roomType").value;
+    document.getElementById("vBenefits").textContent = document.getElementById("benefits").value;
 }
