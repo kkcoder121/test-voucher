@@ -1,68 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hotel Voucher Generator</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Hotel Voucher</title>
+  <link rel='stylesheet' href='style.css'>
 </head>
 <body>
-  <div class="form-container">
-    <h2>Fill Voucher Details</h2>
-    <input id="guestName" placeholder="Guest Name" />
-    <input id="hotelName" placeholder="Hotel Name" />
-    <textarea id="address" placeholder="Hotel Address"></textarea>
-    <label>Check-in Date:</label>
-    <input type="date" id="checkin" />
-    <label>Check-out Date:</label>
-    <input type="date" id="checkout" />
-    <input id="bookingId" placeholder="Booking ID" />
-    <input id="refNo" placeholder="Reference No" />
-    <label>Room Type:</label>
-    <select id="roomType">
-      <option>Executive Room</option>
-      <option>Deluxe Room</option>
-      <option>Standard Room</option>
-    </select>
-    <label>No. of Rooms:</label>
-    <input type="number" id="rooms" min="1" max="10" />
-    <label>Adults:</label>
-    <select id="adults"><option>1</option><option>2</option><option>3</option></select>
-    <label>Children:</label>
-    <select id="children"><option>0</option><option>1</option><option>2</option></select>
-    <button onclick="generateVoucher()">Generate Voucher</button>
+  <div class='form-container'>
+    <h2>Fill Details</h2>
+    <input id='guestName' placeholder='Guest Name'>
+    <input id='bookingId' placeholder='Booking ID'>
+    <input id='refNo' placeholder='Booking Reference No'>
+    <input id='hotelName' placeholder='Hotel Name'>
+    <textarea id='address' placeholder='Address'></textarea>
+    <input id='checkin' type='date'>
+    <input id='checkout' type='date'>
+    <input id='rooms' placeholder='Rooms'>
+    <input id='adults' placeholder='Adults'>
+    <input id='children' placeholder='Children'>
+    <input id='roomType' placeholder='Room Type'>
+    <input id='benefits' placeholder='Benefits'>
+    <button onclick='generateVoucher()'>Generate</button>
   </div>
-
-  <div id="voucher" class="voucher-container">
-    <div class="header">
-      <h1>Flymaxt Holidays</h1>
-      <p class="subtitle">Hotel Booking Confirmation Voucher</p>
-    </div>
-    <div class="section">
-      <h3>Guest Information</h3>
-      <p><strong>Name:</strong> <span id="vGuest"></span></p>
-    </div>
-    <div class="section">
-      <h3>Hotel Details</h3>
-      <p><strong>Hotel:</strong> <span id="vHotel"></span></p>
-      <p><strong>Address:</strong> <span id="vAddress"></span></p>
-    </div>
-    <div class="section">
-      <h3>Booking Information</h3>
-      <p><strong>Booking ID:</strong> <span id="vBookingId"></span></p>
-      <p><strong>Reference No:</strong> <span id="vRefNo"></span></p>
-      <p><strong>Check-in:</strong> <span id="vCheckin"></span></p>
-      <p><strong>Check-out:</strong> <span id="vCheckout"></span></p>
-    </div>
-    <div class="section">
-      <h3>Room Details</h3>
-      <p><strong>Room Type:</strong> <span id="vRoomType"></span></p>
-      <p><strong>No. of Rooms:</strong> <span id="vRooms"></span></p>
-      <p><strong>Adults:</strong> <span id="vAdults"></span> | <strong>Children:</strong> <span id="vChildren"></span></p>
-    </div>
+  <div class='voucher-preview' id='voucher'>
+    <h1>Hotel Voucher</h1>
+    <p><strong>Booking ID:</strong> <span id='vBookingId'></span></p>
+    <p><strong>Booking Ref:</strong> <span id='vRefNo'></span></p>
+    <p><strong>Guest:</strong> <span id='vGuest'></span></p>
+    <p><strong>Hotel:</strong> <span id='vHotel'></span></p>
+    <p><strong>Address:</strong> <span id='vAddress'></span></p>
+    <p><strong>Check-in:</strong> <span id='vCheckin'></span> &nbsp; <strong>Check-out:</strong> <span id='vCheckout'></span></p>
+    <p><strong>Rooms:</strong> <span id='vRooms'></span> | <strong>Adults:</strong> <span id='vAdults'></span> | <strong>Children:</strong> <span id='vChildren'></span></p>
+    <p><strong>Room Type:</strong> <span id='vRoomType'></span></p>
+    <p><strong>Benefits:</strong> <span id='vBenefits'></span></p>
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js'></script>
+  <script src='script.js'></script>
 </body>
 </html>
